@@ -70,7 +70,8 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
 
 .wrapper                      {    margin: 0 auto;
                                    text-align: center;
-                                   width: 1145px;}
+                                   width: 1145px;
+                              }
  
 .col-1                        {    width: 100%;}
 .col-2                        {    width: 50%;}
@@ -108,7 +109,12 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
    -------------------------------------- */
 
 
-
-
+.header_left,
+.header_right {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header_left {width: 380px;}
+.header_right {width: calc(100% - 385px);}
 
 /*---------------------------------------------------------------*/
