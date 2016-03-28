@@ -53,8 +53,7 @@ h1, h2, h3, h4, h5, p         {    margin: 0; text-align: center;}
 h1, h2, h3, h4, h5            {    font-family: 'kuraleregular'; font-family: #202833;}
 .white                        {    color: #fff;}
 h2                            {     font-size: 50px; line-height: 60px;}
-h2:after, h3:after, 
-h4:after, h5:after            {    content: ""; display: block; width: 165px; height: 3px; margin: 40px auto; background-color: #BE9858;}    
+h2:after                      {    content: ""; display: block; width: 165px; height: 3px; margin: 40px auto; background-color: #BE9858;}    
 a                             {    text-decoration: none;}
 strong                        {    font-family: "MyriadProSemiBold"; font-weight: normal;}
 ul                            {    padding: 0;}
@@ -227,11 +226,49 @@ nav li a:hover:after {opacity: 1;}
 
 /*---------------------------------------------------------------*/
 /* --------------------------------------
+   Program section
+   -------------------------------------- */
+.program {
+  background-color: #F8F4EE;
+}
+
+
+
+
+
+
+/* --------------------------------------
    Order section
    -------------------------------------- */
-
-
-
+.order {
+  border-bottom: 9px solid #BE9858;
+  background-color: #222A35;
+}
+.order h2 {
+  color: #fff;
+}
+.order_form {
+  display: block;
+  width: 330px;
+  margin: 0 auto;
+}
+.order_form .button {
+  width: 100%;
+  margin: 0;
+  height: 50px;
+  font: 20px/46px "MyriadProSemibold";
+}
+input {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  background-color: transparent;
+  color: #eff0f1;
+  font-size: 20px;
+}
 
 
 
@@ -383,4 +420,3 @@ a[href^="https://maps.google.com/maps"],
 .gmnoprint {
   display:none !important;
 }
->>>>>>> 59fdf3eb0f28a809a89d8f8e269ea646c834a1d4
