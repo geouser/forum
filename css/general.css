@@ -1,7 +1,40 @@
 ﻿/* --------------------------------------
    Global Styles
    -------------------------------------- */
-  /*Custom fonts*/
+
+
+/*Custom fonts*/
+@font-face {
+    font-family: 'kuraleregular';
+    src: url('../fonts/Kurale/kurale-regular-webfont.eot');
+    src: url('../fonts/Kurale/kurale-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Kurale/kurale-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Kurale/kurale-regular-webfont.woff') format('woff'),
+         url('../fonts/Kurale/kurale-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+         url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+         url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 
 
 /*General styles*/
@@ -10,10 +43,14 @@ body                          {    margin: 0;
                                    padding: 0;
                                    -ms-overflow-x: hidden;
                                        overflow-x: hidden;
-                                   max-width: 100%;}
+                                   max-width: 100%;
+                                   font-family: "MyriadProRegular";
+                              }
 
-p                             {    color: #000;}
+p                             {    color: #202833;}
 h1, h2, h3, h4, h5, p         {    margin: 0;}
+h1, h2, h3, h4, h5            {    font-family: 'kuraleregular'; font-family: #202833;}
+.white                        {    color: #fff;}
 a                             {    text-decoration: none;}
 strong                        {    font-weight: 900;}
 ul                            {    padding: 0;}
