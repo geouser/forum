@@ -47,10 +47,13 @@ body                          {    margin: 0;
                                    font-family: "MyriadProRegular";
                               }
 
-p                             {    color: #202833;}
-h1, h2, h3, h4, h5, p         {    margin: 0;}
+p                             {    color: #202833; font-size: 20px;}
+h1, h2, h3, h4, h5, p         {    margin: 0; text-align: center;}
 h1, h2, h3, h4, h5            {    font-family: 'kuraleregular'; font-family: #202833;}
 .white                        {    color: #fff;}
+h2                            {     font-size: 50px; line-height: 60px;}
+h2:after, h3:after, 
+h4:after, h5:after            {    content: ""; display: block; width: 165px; height: 3px; margin: 40px auto; background-color: #BE9858;}    
 a                             {    text-decoration: none;}
 strong                        {    font-weight: 900;}
 ul                            {    padding: 0;}
@@ -67,7 +70,7 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
 
 .wrapper                      {    margin: 0 auto;
                                    text-align: center;
-                                   width: 1200px;}
+                                   width: 1145px;}
  
 .col-1                        {    width: 100%;}
 .col-2                        {    width: 50%;}
