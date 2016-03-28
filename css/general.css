@@ -245,15 +245,16 @@ nav li a:hover:after {opacity: 1;}
     -ms-flex-align: top;
     align-items: top;
 }
-.person {
+.infoBlock {
     width: 260px;
     margin-bottom: 20px;
 }
-.person_icon {width: 150px; height: 150px; text-align: center; border: 3px solid rgba(190, 152, 88, .3); -webkit-border-radius: 3px;
+.infoBlock_icon {width: 150px; height: 150px; text-align: center; border: 3px solid rgba(190, 152, 88, .3); -webkit-border-radius: 3px;
         border-radius: 3px; margin: 10px auto 15px;}
-.person_icon:before {content: ""; display: inline-block; height: 100%; vertical-align: middle;}
-.person_icon img {width: 55px; vertical-align: middle;}
-.person p {font-size: 20px;}
+.infoBlock_icon:before {content: ""; display: inline-block; height: 100%; vertical-align: middle;}
+.infoBlock_icon img {max-width: 95%; vertical-align: middle;}
+.infoBlock_icon.-small img {max-width: 55px;}
+.infoBlock p {font-size: 20px;}
 /*---------------------------------------------------------------*/
 
 /*---------------------------------------------------------------*/
