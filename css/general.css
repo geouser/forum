@@ -125,6 +125,7 @@ section {
                    max-height: 900px;
                    background: url('../images/section_1.jpg') no-repeat center center;
                    background-size: cover;
+                   padding: 0;
                }
 header         {
                    padding-top: 20px;
@@ -195,9 +196,6 @@ nav li a:hover:after {opacity: 1;}
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
@@ -224,6 +222,38 @@ nav li a:hover:after {opacity: 1;}
 .dateOfEvent:last-of-type:after {display: none;}
 
 .offerInfo .button {margin-top: 45px;}
+
+
+
+#about p {padding: 0 10%;}
+
+#forWhom {background-color: #F8F4EE;}
+.personsWrap {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: top;
+    align-items: top;
+}
+.person {
+    width: 260px;
+    margin-bottom: 20px;
+}
+.person_icon {width: 150px; height: 150px; text-align: center; border: 3px solid rgba(190, 152, 88, .3); -webkit-border-radius: 3px;
+        border-radius: 3px; margin: 10px auto 15px;}
+.person_icon:before {content: ""; display: inline-block; height: 100%; vertical-align: middle;}
+.person_icon img {width: 55px; vertical-align: middle;}
+.person p {font-size: 20px;}
 /*---------------------------------------------------------------*/
 
 /*---------------------------------------------------------------*/
