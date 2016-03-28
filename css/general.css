@@ -162,6 +162,7 @@ header         {
 color: #FFF;
 text-align: left;
 display: inline-block;
+font-size: 30px;
 }
 .event h1:after {
     content: ""; 
@@ -217,7 +218,7 @@ nav li a:hover:after {opacity: 1;}
     align-items: center;
     height: calc(100% - 150px);
 }
-.offerInfo h2 {font-size: 45px;color: #FFF; width: 96%;}
+.offerInfo h2 { margin-bottom: 35px; font-size: 45px; color: #FFF; width: 96%;}
 .offerInfo h2:after {display: none;}
 
 .dateOfEvent {
@@ -226,11 +227,16 @@ nav li a:hover:after {opacity: 1;}
     font-size: 45px; color: #FFF; line-height: 1;
     min-width: 100px;
     padding: 32px 5px 24px;
+    background: url('../images/calend_big.svg') no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+    margin-right: 80px;
     }
+.dateOfEvent:last-of-type {margin-right: 0;}
 .dateOfEvent span {display: block;}
 .dateOfEvent span + span {font: 20px "MyriadProSemiBold";}
-.dateOfEvent:after {}
-.dateOfEvent:last-of-type():after {display: none;}
+.dateOfEvent:after {content: ''; position: absolute; left: calc(100% + 25px); top: 45%; display: inline-block; vertical-align: middle; width: 30px; height: 30px; background-image: url("../images/plus.svg"); background-size: 100% 100%;}
+.dateOfEvent:last-of-type:after {display: none;}
 
 .offerInfo .button {margin-top: 45px;}
 /*---------------------------------------------------------------*/
