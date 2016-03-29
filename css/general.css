@@ -268,11 +268,9 @@ nav li a:hover:after {opacity: 1;}
   background-color: #fff;
   text-align: left;
 }
-.schedule header {
-  padding-top: 25px;
-}
 .day {
   position: relative;
+  width: 100%;
 }
 .day:before {
   content: '';
@@ -290,9 +288,6 @@ nav li a:hover:after {opacity: 1;}
   font-size: 30px;
   text-align: left;
 }
-.day {
-  width: 100%;
-}
 .day td {
   padding: 25px 0;
   vertical-align: top;
@@ -302,6 +297,11 @@ nav li a:hover:after {opacity: 1;}
   padding-bottom: 0;
   border-top: none;
 }
+.session {
+  color: #C3A068;
+}
+
+
 .day .down-border {
   border-bottom: 2px solid #F4F4F5;
 }
@@ -312,9 +312,7 @@ nav li a:hover:after {opacity: 1;}
 .day__event__info {
   width: calc(100% - 140px);
 }
-.session {
-  color: #C3A068;
-}
+
 .day__event__info__details {
   position: relative;
   margin-top: 40px;
@@ -347,6 +345,8 @@ nav li a:hover:after {opacity: 1;}
   position: absolute;
   left: -30px;
 }
+
+
 .speakers {
   position: relative;
   padding-top: 15px;
