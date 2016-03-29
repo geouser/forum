@@ -185,6 +185,7 @@ nav li a:hover:after {opacity: 1;}
 
 .offerInfo {
     display: flex;
+    -webkit-display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -228,6 +229,7 @@ nav li a:hover:after {opacity: 1;}
 #forWhom {background-color: #F8F4EE;}
 .infoBlocksWrap {
     display: flex;
+    -webkit-display: flex;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
