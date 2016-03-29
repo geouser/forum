@@ -49,15 +49,15 @@ body                          {    margin: 0;
                                    font-size: 20px;
                               }
 
-h1, h2, h3, h4, h5, p         {    margin: 0; text-align: center;}
-h1, h2, h3, h4, h5            {    font-family: 'kuraleregular'; font-family: #202833;}
+p                             {    margin: 0;}
+h1, h2, h3, h4, h5            {    margin: 0; text-align: center;}
+h1, h2, h3, h4, h5            {    font-family: 'kuraleregular'; color: #202833;}
 .white                        {    color: #fff;}
 h2                            {     font-size: 50px; line-height: 60px;}
-h2:after, h3:after, 
-h4:after, h5:after            {    content: ""; display: block; width: 165px; height: 3px; margin: 40px auto; background-color: #BE9858;}    
+h2:after                      {    content: ""; display: block; width: 165px; height: 3px; margin: 40px auto; background-color: #BE9858;}    
 a                             {    text-decoration: none;}
 strong                        {    font-family: "MyriadProSemiBold"; font-weight: normal;}
-ul                            {    padding: 0;}
+ul                            {    padding: 0; margin: 0;}
 *                             {    box-sizing: border-box; outline: none;}
 *:focus                       {    outline: none;}
 ::-moz-focus-inner            {    border:0;}
@@ -255,11 +255,166 @@ nav li a:hover:after {opacity: 1;}
 
 /*---------------------------------------------------------------*/
 /* --------------------------------------
+   Program section
+   -------------------------------------- */
+.program {
+  background-color: #F8F4EE;
+}
+.schedule {
+  padding: 15px 60px 25px 90px;
+  margin: 40px 0;
+  background-color: #fff;
+  text-align: left;
+}
+.schedule header {
+  padding-top: 25px;
+}
+.day {
+  position: relative;
+}
+.day:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: -60px;
+  width: 30px;
+  height: 30px;
+  background: url(../images/calend.svg) 50% 50% no-repeat;
+  background-size: 100% 100%;
+}
+.day h4 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: left;
+}
+.day table {
+  width: 100%;
+  table-layout: fixed;
+}
+.day table td {
+  padding: 25px 0;
+  vertical-align: top;
+  border-top: 2px solid #F4F4F5;
+}
+.day table .down-border {
+  border-bottom: 2px solid #F4F4F5;
+}
+.time {
+  width: 140px;
+  font-family: "MyriadProSemibold";
+}
+.event {
+  width: calc(100% - 140px);
+}
+.session {
+  color: #C3A068;
+}
+.detailed__content {
+  position: relative;
+  margin-top: 40px;
+  text-align: left;
+}
+.detailed__content:before {
+  content: '';
+  position: absolute;
+  left: -140px;
+  top: -10px;
+  width: 250px;
+  height: 2px;
+  background-color: #F4F4F5;
+}
+.detailed__content h5 {
+  margin: 5px 0 8px;
+  text-align: left;
+  font-size: 20px;
+  font-family: inherit;
+}
+.detailed__content ul {
+  padding-left: 30px;
+}
+.detailed__content ul li {
+  position: relative;
+  list-style: none;
+}
+.detailed__content ul li:before {
+  content: '—';
+  position: absolute;
+  left: -30px;
+}
+.speakers {
+  position: relative;
+  padding-top: 15px;
+  margin-top: 25px;
+}
+.speakers:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 2px;
+  background-color: #F4F4F5;
+}
+.speaker {
+  display: inline-block;
+  width: 50%;
+  padding-right: 30px;
+  margin: 25px -2px 0 -2px;
+}
+.speaker figure {
+  width: 65px;
+  margin-right: 20px;
+  border: 2px solid #DECBAB;
+}
+.speaker figure img {
+  max-width: 100%;
+}
+.speaker .text {
+  width: calc(100% - 85px);
+  font-size: 18px;
+}
+.speaker__name {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+/* --------------------------------------
    Order section
    -------------------------------------- */
-
-
-
+.order {
+  border-bottom: 9px solid #BE9858;
+  background-color: #222A35;
+}
+.order h2 {
+  color: #fff;
+}
+.order_form {
+  display: block;
+  width: 330px;
+  margin: 0 auto;
+}
+.order_form .button {
+  width: 100%;
+  margin: 0;
+  height: 50px;
+  font: 20px/46px "MyriadProSemibold";
+}
+input {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  background-color: transparent;
+  color: #eff0f1;
+  font-size: 20px;
+}
 
 
 
