@@ -144,13 +144,13 @@ header         {
     text-align: right;
     }
 
-.event h1 {
+.day__event__info h1 {
 color: #FFF;
 text-align: left;
 display: inline-block;
 font-size: 30px;
 }
-.event h1:after {
+.day__event__info h1:after {
     content: ""; 
     display: block; width: 100%; height: 3px; margin: 30px auto 0; background-color: #BE9858;
 }
@@ -290,34 +290,37 @@ nav li a:hover:after {opacity: 1;}
   font-size: 30px;
   text-align: left;
 }
-.day table {
+.day {
   width: 100%;
-  table-layout: fixed;
 }
-.day table td {
+.day td {
   padding: 25px 0;
   vertical-align: top;
   border-top: 2px solid #F4F4F5;
 }
-.day table .down-border {
+.day thead td {
+  padding-bottom: 0;
+  border-top: none;
+}
+.day .down-border {
   border-bottom: 2px solid #F4F4F5;
 }
-.time {
+.day__event__time {
   width: 140px;
   font-family: "MyriadProSemibold";
 }
-.event {
+.day__event__info {
   width: calc(100% - 140px);
 }
 .session {
   color: #C3A068;
 }
-.detailed__content {
+.day__event__info__details {
   position: relative;
   margin-top: 40px;
   text-align: left;
 }
-.detailed__content:before {
+.day__event__info__details:before {
   content: '';
   position: absolute;
   left: -140px;
@@ -326,20 +329,20 @@ nav li a:hover:after {opacity: 1;}
   height: 2px;
   background-color: #F4F4F5;
 }
-.detailed__content h5 {
+.day__event__info__details h5 {
   margin: 5px 0 8px;
   text-align: left;
   font-size: 20px;
   font-family: inherit;
 }
-.detailed__content ul {
+.day__event__info__details ul {
   padding-left: 30px;
 }
-.detailed__content ul li {
+.day__event__info__details ul li {
   position: relative;
   list-style: none;
 }
-.detailed__content ul li:before {
+.day__event__info__details ul li:before {
   content: '—';
   position: absolute;
   left: -30px;
