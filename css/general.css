@@ -273,6 +273,148 @@ nav li a:hover:after {opacity: 1;}
 
 /*---------------------------------------------------------------*/
 /* --------------------------------------
+   Themes section
+   -------------------------------------- */
+.themes {
+  background: url(../images/section_themes.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  border-bottom: 9px solid #BE9858;
+}
+.themes h2 {
+  color: #fff;
+}
+.themes_list {
+  width: 750px;
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+  color: #fff;
+  counter-reset: list;
+}
+.themes_list:before {
+  content: '';
+  width: 2px;
+  height: 130%;
+  position: absolute;
+  left: 25px;
+  top: -15%;
+  background: url(../images/line.png) 50% 50% no-repeat;
+  background-size: 100% 100%;
+}
+.themes_list li {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+}
+.themes_list li p {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 85px);
+}
+.themes_list li:before {
+  counter-increment: list;
+  content: counter(list) ;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  border-radius: 50px;
+  margin-right: 25px;
+  border: 3px solid #BE9858;
+  text-align: center;
+  font: 22px/44px "MyriadProSemiBold";
+  background-color: #1F2732;
+}
+
+
+
+/* --------------------------------------
+   Prices section
+   -------------------------------------- */
+.prices_wrap {
+  width: 910px;
+  margin: 0 auto 35px;
+  text-align: justify;
+}
+.price {
+  display: inline-block;
+  vertical-align: top;
+  width: 260px;
+  padding: 25px 30px;
+  border: 3px solid #EBE0CD;
+  border-radius: 3px;
+  text-align: center;
+}
+.price--full {
+  width: 100%;
+}
+.price:not(.price--full) {
+  margin-bottom: 60px;
+}
+.price__calendar {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 10px;
+  background: url(../images/calend.svg) 50% 50% no-repeat;
+  background-size: 100% 100%;
+}
+.price hr {
+  margin: 12px 0;
+  border-color: #EBE0CD
+}
+.price--full hr {
+  display: inline-block;
+  width: 205px;
+  margin-top: 25px;
+}
+.price .button {
+  height: 50px;
+  margin: 0;
+  line-height: 46px;
+  font-size: 18px;
+  width: 100%;
+}
+.price--full .button {
+  width: 260px;
+}
+.price .button:disabled {
+  opacity: .5;
+}
+.price__end_date {
+  font: 30px 'kuraleregular';
+  color: #BE9858;
+}
+.price__value {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.price__title {
+  font: 40px 'kuraleregular';
+  color: #BE9858;
+}
+.location_link {
+  margin-top: 10px;
+}
+.location_link a {
+  color: #BE9858;
+  text-decoration: underline;
+}
+.location_link a:hover {
+  text-decoration: none;
+}
+.location_link a:before {
+  content: '';
+  width: 10px;
+  height: 14px;
+  margin: -4px 8px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/pin.svg) 50% 50% no-repeat;
+  background-size: 100%;
+}
+/* --------------------------------------
    Program section
    -------------------------------------- */
 .program {
