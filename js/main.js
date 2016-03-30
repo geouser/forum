@@ -32,7 +32,7 @@ $(function() { // add class on scroll
       className = 'hasScrolled';
 
   $document.scroll(function() {
-    $element.toggleClass(className, $document.scrollTop() >= 10);
+    $element.toggleClass(className, $document.scrollTop() >= 20);
     $element2.toggleClass(className, $document.scrollTop() >= 1);
   });
 });
