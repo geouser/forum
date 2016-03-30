@@ -134,7 +134,7 @@ section {
   }
 }
 
-@media (max-width: 997px) {
+@media (max-width: 991px) {
   .wrapper {
     width: 760px;
   }
