@@ -147,13 +147,16 @@ section {
   h2::after {
     margin: 30px auto;
   }
+  body {font-size: 18px;}
 }
 @media (max-width: 767px) {
   .wrapper {
     width: 95%;
   }
 }
-
+@media (max-width: 700px) {
+body {font-size: 16px;}
+}
 
 /* --------------------------------------
    Custom Styles
