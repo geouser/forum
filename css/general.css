@@ -125,9 +125,11 @@ section {
   }
   h2 {
     font-size: 45px;
+    line-height: normal;
   }
   h3 {
     font-size: 30px;
+    line-height: normal;
   }
   h2::after {
     margin: 30px auto;
@@ -139,10 +141,10 @@ section {
     width: 760px;
   }
   h2 {
-    font-size: 45px;
+    font-size: 35px;
   }
   h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
   h2::after {
     margin: 30px auto;
@@ -155,7 +157,13 @@ section {
   }
 }
 @media (max-width: 700px) {
-body {font-size: 16px;}
+  body {font-size: 16px;}
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 22px;
+  }
 }
 
 /* --------------------------------------
@@ -667,6 +675,11 @@ nav li a:hover:after {opacity: 1;}
   }
 }
 
+@media (max-width: 450px) {
+  .price {
+    width: 100%;
+  }
+}
 
 
 
@@ -908,7 +921,11 @@ input {
   color: #eff0f1;
   font-size: 20px;
 }
-
+@media (max-width: 450px) {
+  .order_form {
+    width: 100%;
+  }
+}
 
 
 
