@@ -452,7 +452,7 @@ nav li a:hover:after {opacity: 1;}
 .infopartnersWrap {margin-top: 20px;}
 
 @media (max-width: 800px) {
-    .askAnswer h2 {width: 280px;}
+    .askAnswer h2 {width: 280px; text-align: center;}
     .askAnswer p {width: calc(100% - 290px); 
 }
 @media (max-width: 700px) {
