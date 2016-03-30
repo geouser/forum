@@ -240,18 +240,17 @@ nav li a:hover:after {opacity: 1;}
 
 .menu-button.active              {   -webkit-border-radius: 6px;border-radius: 6px;}
 .menu-button.active .top_line    {   transform: rotate(45deg);-webkit-transform: rotate(45deg);top: 45%;}
-.menu-button.active .bottom_line {   transform: rotate(-45deg);-webkit-transform: rotate(-45deg);bottom: 35%;}
+.menu-button.active .bottom_line {   transform: rotate(-45deg);-webkit-transform: rotate(-45deg);bottom: 45%;}
 .menu-button.active .middle_line {   width: 0;left: 50%;}
 
 
 
 @media (min-width: 1100px) {
-    nav                         {   display: inline-block !important;}
 }
 @media (max-width: 1100px) {
     .menu-button                {    position: fixed;
                                      top: 10px;
-                                     right: 20px;
+                                     right: 8px;
                                      margin: auto; 
                                      -webkit-border-radius: 3px;
                                      border-radius: 3px;
@@ -262,20 +261,23 @@ nav li a:hover:after {opacity: 1;}
                                      height: 49px;
                                      display: block;
                                  }
-    nav                         {    position: absolute;
-                                     display: none;
+    nav                         {    
                                      top: 0;
-                                     left: 50%;
-                                     margin-left: -50vw;
+                                     left: -100%;
+                                     width: 255px;
                                      text-align: center;
-                                     background-color: rgba(0,0,0, .9);
-                                     width: 100%;
+                                     background-color: rgba(49,58,77, .98);
                                      text-align: center;
                                      margin-top: 0;
-                                     border-bottom: 2px solid #fff;
                                      padding: 10px 0;
-                                     margin-top: 39px;
-                                     position: fixed;}
+                                     position: fixed;
+                                     height: 100%;
+                                     z-index: 100;
+                                }
+    nav ul                      {   -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; height: 100%;}
+    nav.active                  {   left: 0;}
 }
 
 
