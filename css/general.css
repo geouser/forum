@@ -179,6 +179,7 @@ section {
                    background: url('../images/section_1.jpg') no-repeat center center;
                    background-size: cover;
                    padding: 0;
+                   border-bottom: 9px solid #BE9858;
                }
 header         {
                    padding-top: 20px;
@@ -189,7 +190,7 @@ header         {
                    display: inline-block;
                    vertical-align: middle;
                }
-.header_left   {    width: 380px; text-align: left; }
+.header_left   {    width: 380px; text-align: left; margin-top: -12px;}
 
 
 .header_right {
@@ -442,7 +443,7 @@ nav li a:hover:after {opacity: 1;}
 .infoBlock_icon.-small img {max-width: 55px;} 
 
 
-#forWhat {background-color: #2C333E;}
+#forWhat {background: url(../images/section_forWhat.jpg) 50% 50% no-repeat; background-size: cover; border-bottom: 9px solid #BE9858;}
 .askAnswer p,
 .askAnswer h2 {display: inline-block; vertical-align: top; padding-right: 30px; text-align: left;}
 .askAnswer h2 {width: 310px; border-right: 1px solid rgba(255,255,255, .1); padding: 15px 0 30px 0;}
@@ -453,7 +454,7 @@ nav li a:hover:after {opacity: 1;}
 
 @media (max-width: 800px) {
     .askAnswer h2 {width: 280px;}
-    .askAnswer p {width: calc(100% - 290px); 
+    .askAnswer p {width: calc(100% - 290px);}
 }
 @media (max-width: 700px) {
     .askAnswer h2 {width: 100%; text-align: center; border: none;}
@@ -465,6 +466,7 @@ nav li a:hover:after {opacity: 1;}
 /* --------------------------------------
    Themes section
    -------------------------------------- */
+
 .themes {
   background: url(../images/section_themes.jpg) 50% 50% no-repeat;
   background-size: cover;

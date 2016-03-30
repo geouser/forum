@@ -61,6 +61,14 @@ $(function() { // add class on scroll
     $.magnificPopup.close();
   });
 
+  $('nav a').on('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top + 20
+    }, 800);
+    return false;
+  });
+
   /*google map*/
   function googleMap_initialize() {
 
