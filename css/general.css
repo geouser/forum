@@ -134,7 +134,25 @@ section {
   }
 }
 
-
+@media (max-width: 997px) {
+  .wrapper {
+    width: 760px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h2::after {
+    margin: 30px auto;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    width: 95%;
+  }
+}
 
 
 /* --------------------------------------
