@@ -18,6 +18,26 @@ window.params = {
 jQuery(document).ready(function($) {
 
 
+$('.menu-button').on('click', function(event) {
+  event.preventDefault();
+  $(this).toggleClass('active');
+  $(this).siblings('nav').fadeToggle('fast');
+});
+
+
+$(function() { // add class on scroll
+  var $document = $(document),
+      $element = $('.menu-button'),
+      $element2 = $('header'),
+      className = 'hasScrolled';
+
+  $document.scroll(function() {
+    $element.toggleClass(className, $document.scrollTop() >= 10);
+    $element2.toggleClass(className, $document.scrollTop() >= 1);
+  });
+});
+
+
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
     type: 'inline',
