@@ -75,7 +75,7 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
                                    text-align: center;
                                    width: 1145px;
                               }
- 
+
 section {
   padding: 107px 0;
 }
@@ -115,6 +115,28 @@ section {
     color: #FFF;
     margin-left: 10px;
 }
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 970px;
+  }
+  section {
+    padding: 70px 0;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h2::after {
+    margin: 30px auto;
+  }
+}
+
+
+
+
 /* --------------------------------------
    Custom Styles
    -------------------------------------- */
@@ -430,21 +452,23 @@ nav li a:hover:after {opacity: 1;}
   position: relative;
   width: 100%;
 }
-.day:before {
+
+.day h4 {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: left;
+}
+.day h4:before {
   content: '';
   display: block;
   position: absolute;
-  top: 30px;
+  top: 6px;
   left: -60px;
   width: 30px;
   height: 30px;
   background: url(../images/calend.svg) 50% 50% no-repeat;
   background-size: 100% 100%;
-}
-.day h4 {
-  margin-bottom: 30px;
-  font-size: 30px;
-  text-align: left;
 }
 .day td {
   padding: 25px 0;
@@ -541,6 +565,28 @@ nav li a:hover:after {opacity: 1;}
   margin-bottom: 5px;
 }
 
+
+@media (max-width: 1200px) {
+  .schedule {
+    padding: 15px 40px 25px 40px;
+  }
+  .day h4 {
+    font-size: 25px;
+  }
+  .day h4:before {
+    position: static;
+    display: inline-block;
+    margin: -6px 15px 0 0;
+    vertical-align: middle;
+  }
+  .day,
+  .day__event__info__details h5 {
+    font-size: 16px;
+  }
+  .speaker .text {
+    font-size: 14px;
+  }
+}
 
 
 
@@ -728,4 +774,12 @@ a[href^="http://maps.google.com/maps"],
 a[href^="https://maps.google.com/maps"],
 .gmnoprint {
   display:none !important;
+}
+@media (max-width: 1200px) {
+  footer {
+    height: 500px;
+  }
+  footer address {
+    font-size: 14px;
+  }
 }
