@@ -666,6 +666,19 @@ nav li a:hover:after {opacity: 1;}
     padding: 20px;
   }
 }
+@media (max-width: 767px) {
+  .prices_wrap {
+    text-align: center;
+  }
+  .price {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+  .price:not(.price--full) {
+    margin-bottom: 25px;
+  }
+}
 
 
 
@@ -836,7 +849,44 @@ nav li a:hover:after {opacity: 1;}
   }
 }
 
+@media (max-width: 767px) {
+  .speaker {
+    width: 100%;
+    padding-right: 0;
+    margin-top: 20px;
+  }
+}
 
+@media (max-width: 500px) {
+  .schedule {
+    padding: 15px 15px 25px 15px;
+  }
+  .day, .day__event__info__details h5 {
+    font-size: 14px;
+  }
+  .day__event__time {
+    width: 50px;
+  }
+  .day__event__info__details::before {
+    left: -50px;
+    width: 100px;
+  }
+  .day__event__info {
+    width: calc(100% - 50px);
+  }
+
+  .speakers::before {
+    width: 100px;
+  }
+  .speaker .text {
+    width: calc(100% - 60px);
+    font-size: 13px;
+  }
+  .speaker figure {
+    width: 50px;
+    margin-right: 10px;
+  }
+}
 
 
 /* --------------------------------------
