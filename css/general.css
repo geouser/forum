@@ -80,7 +80,9 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
 section {
   padding: 107px 0;
 }
-
+.fa {
+    color: #BE9858;
+}
 .vertical:before              {    content: " "; 
                                    display: inline-block; vertical-align: middle; 
                                    height: 100%;
@@ -650,8 +652,8 @@ header.hasScrolled nav {
   color: #fff;
 }
 .themes_list {
-  width: 750px;
   position: relative;
+  width: 750px;
   margin: 0 auto;
   text-align: left;
   color: #fff;
@@ -659,17 +661,17 @@ header.hasScrolled nav {
 }
 .themes_list:before {
   content: '';
-  width: 2px;
-  height: 130%;
   position: absolute;
   left: 25px;
   top: -15%;
+  width: 2px;
+  height: 130%;
   background: url(../images/line.png) 50% 50% no-repeat;
   background-size: 100% 100%;
 }
 .themes_list li {
-  display: block;
   position: relative;
+  display: block;
   margin-bottom: 30px;
 }
 .themes_list li p {
@@ -775,10 +777,10 @@ header.hasScrolled nav {
   margin-top: 25px;
 }
 .price .button {
+  width: 100%;
   height: 50px;
   margin: 0;
   font-size: 18px;
-  width: 100%;
 }
 .price.price--full .button {
   width: 260px;
@@ -791,8 +793,8 @@ header.hasScrolled nav {
   color: #BE9858;
 }
 .price__value {
-  font-size: 30px;
   margin-bottom: 12px;
+  font-size: 30px;
 }
 .price__title {
   font: 40px 'kuraleregular';
@@ -810,11 +812,11 @@ header.hasScrolled nav {
 }
 .location_link a:before {
   content: '';
+  display: inline-block;
+  vertical-align: middle;
   width: 10px;
   height: 14px;
   margin: -4px 8px 0 0;
-  display: inline-block;
-  vertical-align: middle;
   background: url(../images/pin.svg) 50% 50% no-repeat;
   background-size: 100%;
 }
@@ -851,8 +853,8 @@ header.hasScrolled nav {
     text-align: center;
   }
   .price {
-    width: 300px;
     display: block;
+    width: 300px;
     margin: 0 auto;
   }
   .price:not(.price--full) {
@@ -1135,20 +1137,10 @@ input {
 .contact_list a {
   color: #202833!important;
 }
-i.phone,
-i.mail {
+.contact_list i {
   display: inline-block;
   vertical-align: middle;
-  width: 70px;
-  background-size: auto 100%;
-}
-i.phone {
-  height: 34px;
-  background: url(../images/phone.svg) 50% 50% no-repeat;
-}
-i.mail {
-  height: 23px;
-  background: url(../images/mail.svg) 50% 50% no-repeat;
+  margin-right: 10px;
 }
 
 
@@ -1186,7 +1178,8 @@ footer address .wrapper {
 footer address p {
   display: inline-block;
 }
-.copy {
+.copy,
+.company {
   padding-right: 15px;
   margin-right: 15px;
   border-right: 1px solid #2A323C;
@@ -1201,18 +1194,18 @@ footer address p {
 .socials a {
   display: inline-block;
   vertical-align: middle;
-  height: 20px;
-  width: 25px;
+  font-size: 23px;
+  margin-right: 5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-.socials .vk {
-  background: url(../images/vk.svg) 50% 50% no-repeat;
-  background-size: 100% auto;
+.socials a:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.socials .fb {
-  background: url(../images/fb.svg) 50% 50% no-repeat;
-  background-size: auto 100%;
-}
-
 
 .map_container,
 .map {
