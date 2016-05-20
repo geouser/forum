@@ -498,6 +498,22 @@
             </div>
         </section>
 
+        <script>
+            
+            $('.gallery').each(function () {
+                $(this).magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    gallery: {
+                        enabled: true,
+                        navigateByImgClick: true
+                    },
+                    fixedContentPos: false,
+                    titleSrc: 'title'
+                });
+            });
+        </script>
+
 
 
         <!-- #order -->
