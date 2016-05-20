@@ -31,7 +31,7 @@ $(function() { // add class on scroll
       $element2 = $('header'),
       className = 'hasScrolled';
 
-  $document.scroll(function() {
+  $document.on ('scroll ready', function() {
     $element.toggleClass(className, $document.scrollTop() >= 20);
     $element2.toggleClass(className, $document.scrollTop() >= 1);
   });
@@ -72,8 +72,13 @@ $(function() { // add class on scroll
   /*google map*/
   function googleMap_initialize() {
 
-    var mapCenterCoord = new google.maps.LatLng(51.662259, 39.198121);
-    var mapMarkerCoord = new google.maps.LatLng(51.662259, 39.198121);
+    var map_box = $('#map-canvas');
+    var lat = map_box.data('lat');
+    var long = map_box.data('long');
+    var company = map_box.data('company');
+
+    var mapCenterCoord = new google.maps.LatLng(lat, long);
+    var mapMarkerCoord = new google.maps.LatLng(lat, long);
 
     var mapOptions = {
       center: mapCenterCoord,
@@ -226,7 +231,7 @@ $(function() { // add class on scroll
       icon: {
         url: 'images/pin.svg',
       },
-      title: 'ЮФЧ'
+      title: company
     });
 
     $(window).resize(function (){
