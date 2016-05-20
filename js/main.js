@@ -38,6 +38,7 @@ $(function() { // add class on scroll
 });
 
 
+
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
     type: 'inline',

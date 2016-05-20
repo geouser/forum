@@ -1276,7 +1276,8 @@ a[href^="https://maps.google.com/maps"],
     margin: 10px 0;
     display: block;
   }
-  .copy {
+  .copy,
+  .company {
     padding-right: 0;
     margin-right: 0;
     border: 0;
