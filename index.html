@@ -17,8 +17,6 @@
         <!--<link rel="shortcut icon" href="images/favicon.ico">-->
         
 
-        <link rel="stylesheet" href="css/magnific-popup.css">
-
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/general.css">
@@ -469,9 +467,23 @@
         <!-- end #program -->
 
 
-        <section>
+        <section class="slider-section">
             <div class="wrapper">
-                <h2>Галерея</h2>
+                <h2>Slider</h2>
+                <div class="slider">
+                    <img data-lazy="images/people-coffee-notes-tea.jpg" alt="">
+                    <img data-lazy="images/people-coffee-tea-meeting.jpg" alt="">
+                    <img data-lazy="images/people-woman-coffee-meeting.jpg" alt="">
+                    <img data-lazy="images/people-office-group-team.jpg" alt="">
+                    <img data-lazy="images/hands-people-woman-meeting.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="gallery-section">
+            <div class="wrapper">
+                <h2>Gallery</h2>
                 <div class="gallery">
                     <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="Форум 17.03.2015">
                         <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" alt="">
@@ -498,34 +510,17 @@
             </div>
         </section>
 
-        <script>
-            
-            $('.gallery').each(function () {
-                $(this).magnificPopup({
-                    delegate: 'a',
-                    type: 'image',
-                    gallery: {
-                        enabled: true,
-                        navigateByImgClick: true
-                    },
-                    fixedContentPos: false,
-                    titleSrc: 'title'
-                });
-            });
-        </script>
-
-
 
         <!-- #order -->
         <section class="order" id="order">
             <div class="wrapper">
-                <h2>Купить билет на форум уже сейчас</h2>
+                <h2>You can buy tickets right now</h2>
 
                 <form action="" class="order_form">
-                    <input type="text" name="name" placeholder="Введите ваше имя">
-                    <input type="text" name="mail" placeholder="E-mail адрес">
-                    <input type="text" name="phone" placeholder="Мобилный телефон">
-                    <button class="button gold">Купить билет сейчас</button>
+                    <input type="text" name="name" placeholder="Your name">
+                    <input type="text" name="mail" placeholder="E-mail">
+                    <input type="text" name="phone" placeholder="Phone number">
+                    <button class="button gold">Buy tickets now</button>
                 </form>
             </div>
         </section>
@@ -579,10 +574,17 @@
         <div id="modal-popup" class="mfp-hide zoom-anim-dialog"></div>
         <!-- end modal popup's -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+        
 
         <link rel="stylesheet" href="css/font-awesome.min.css">
 

@@ -57,10 +57,40 @@ $(function() { // add class on scroll
     mainClass: 'my-mfp-slide-bottom'
   });
 
-  $(document).on('click', '.popup-modal-dismiss', function (e) {
-    e.preventDefault();
-    $.magnificPopup.close();
+  $('.gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile mfp-with-zoom',
+    fixedContentPos: false,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+      titleSrc: function(item) {
+        return item.el.attr('title') + '<small>by Forum</small>';
+      }
+    },
+    zoom: {
+      enabled: true,
+      duration: 300, // don't foget to change the duration also in CSS
+      opener: function(element) {
+        return element.find('img');
+      }
+    }
   });
+
+
+  $('.slider').slick({
+    lazyLoad: 'progressive',
+    fade: true
+  });
+
 
   $('nav a').on('click', function(event) {
     event.preventDefault();
