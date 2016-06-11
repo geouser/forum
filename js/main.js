@@ -73,7 +73,7 @@ $(function() { // add class on scroll
     image: {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
       titleSrc: function(item) {
-        return item.el.attr('title') + '<small>by Forum</small>';
+        return item.el.attr('title') + '<small class="image-source-link"><a href="'+item.el.attr('data-source')+'">Image source</a></small>';
       }
     },
     zoom: {

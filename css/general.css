@@ -1399,7 +1399,7 @@ a[href^="https://maps.google.com/maps"],
     margin: auto;
 }
 
-.image-source-link {
+.image-source-link a {
     color: #98C3D1;
 }
 
