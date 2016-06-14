@@ -1,24 +1,23 @@
-// Global parameters
-window.params = {
-  widthFull: 750,
-  maxRowHeight: 0,
-  isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
-  isIOS: /iPhone|iPad|iPod/i.test(navigator.userAgent)
-};
-
-
-
 
 /*
 #############################
-#   Main JS for ____________   #
+#   Main JS   #
 #############################
 */
 
 jQuery(document).ready(function($) {
 
 
-$('.menu-button').on('click', function(event) {
+$('nav a').on('click', function(event) {  // scroll to anchor
+  event.preventDefault();
+  $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top - 40
+  }, 800);
+  return false;
+});
+
+
+$('.menu-button').on('click', function(event) { // mobile menu-button on click
   event.preventDefault();
   $(this).toggleClass('active');
   $(this).siblings('.headerInfo').toggleClass('active');
@@ -38,9 +37,7 @@ $(function() { // add class on scroll
 });
 
 
-
-/*-----------------------------------------------------------------*/  
-  $('.magnific').magnificPopup({
+  $('.magnific').magnificPopup({ // magnific popup
     type: 'inline',
 
     fixedContentPos: false,
@@ -57,50 +54,11 @@ $(function() { // add class on scroll
     mainClass: 'my-mfp-slide-bottom'
   });
 
-  $('.gallery').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile mfp-with-zoom',
-    fixedContentPos: false,
-    fixedBgPos: true,
-    overflowY: 'auto',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-    },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-      titleSrc: function(item) {
-        return item.el.attr('title') + '<small class="image-source-link"><a href="'+item.el.attr('data-source')+'">Image source</a></small>';
-      }
-    },
-    zoom: {
-      enabled: true,
-      duration: 300, // don't foget to change the duration also in CSS
-      opener: function(element) {
-        return element.find('img');
-      }
-    }
-  });
 
 
-  $('.slider').slick({
-    lazyLoad: 'progressive',
-    fade: true
-  });
-
-
-  $('nav a').on('click', function(event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top + 20
-    }, 800);
-    return false;
-  });
-
-  /*google map*/
+  /*--------------------
+  google map
+  ---------------------*/
   function googleMap_initialize() {
 
     var map_box = $('#map-canvas');
