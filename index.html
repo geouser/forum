@@ -181,7 +181,7 @@
 
         <section id="organisators"><!-- organisators-->   
             <div class="wrapper"><!-- wrapper--> 
-                <h2>Организаторы форума</h2>
+                <h2>Forum organizers</h2>
 
                 <div class="infoBlocksWrap"><!-- infoBlocksWrap-->  
 
@@ -189,28 +189,28 @@
                         <div class="infoBlock_icon">
                             <img src="images/l1.jpg" alt="">
                         </div>  
-                        <p>Правовой центр <br> Дивиус</p>
+                        <p>Eisenstadt <br> Public Library</p>
                     </div>
 
                     <div class="infoBlock">
                         <div class="infoBlock_icon">
                             <img src="images/l2.jpg" alt="">
                         </div>
-                        <p>Семенов <br> и партнеры</p>
+                        <p>Winde <br> Company</p>
                     </div> 
 
                     <div class="infoBlock">
                         <div class="infoBlock_icon">
                             <img src="images/l3.jpg" alt="">
                         </div>
-                        <p>Торгово-промышленная палата Воронежской области</p>
+                        <p>FaceLift Ltd.</p>
                     </div> 
 
                     <div class="infoBlock">
                         <div class="infoBlock_icon">
                             <img src="images/l4.jpg" alt="">
                         </div>
-                        <p>Ассоциация <br> Юристов России</p>
+                        <p>GAMBLE production</p>
                     </div>  
 
 
@@ -218,13 +218,13 @@
 
                 <hr>
                 
-                <h3>Информационный партнер</h3>
+                <h3>Informational partner</h3>
                 <div class="infopartnersWrap"><!-- infopartnersWrap-->  
                     <div class="infoPartner">
                         <div class="infoBlock_icon big">
                             <img src="images/l5.jpg" alt="">
                         </div>
-                        <span>Журнал De Facto</span>
+                        <span>5 Minute News</span>
                     </div>
                 </div><!-- end infopartnersWrap --> 
 
@@ -290,7 +290,7 @@
                         <p class="price__publicate">Размещение в печатных материалах, упоминание в СМИ</p>
                         <hr>
                         <p class="price__value">$790</p>
-                        <button class="button gold">Принять участие</button>
+                        <button class="button gold magnific" href="#modal-popup">Принять участие</button>
                     </div> <!-- price -->
                 </div> <!-- .prices_wrap -->
 
@@ -555,7 +555,34 @@
 
         
         <!-- modal popup's -->
-        <div id="modal-popup" class="mfp-hide zoom-anim-dialog"></div>
+        <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup">
+            <form action="">
+                <input type="text" name="name" placeholder="Ваше имя" required="">
+                <input type="text" name="phone" placeholder="Ваш телефон" required="">
+                <input type="hidden" name="form_id" value="01">
+                <button class="button gold">Заказать звонок</button>
+            </form>
+        </div>
+
+        <div id="modal-popup2" class="mfp-hide zoom-anim-dialog popup">
+            <form action="">
+                <input type="text" name="name" placeholder="Ваше имя" required="">
+                <input type="text" name="phone" placeholder="Ваш телефон" required="">
+                <input type="text" name="mail" placeholder="Ваш E-mail">
+                <input type="hidden" name="form_id" value="02">
+                <button class="button gold">Купить билет</button>
+            </form>
+        </div>
+
+        <div id="modal-popup-ok" class="mfp-hide zoom-anim-dialog popup">
+            <h3>Ваша заявка принята!</h3>
+            <p>Мы свяжемся с Вами в ближайшее время.</p>
+        </div>
+
+        <div id="modal-popup-error" class="mfp-hide zoom-anim-dialog popup">
+            <h3>Упс =(<br>Похоже что-то пошло не так.</h3>
+            <p>Но Вы всегда можете связаться с нами по телефону +7 (473) 204-53-55</p>
+        </div>
         <!-- end modal popup's -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

@@ -44,7 +44,7 @@ $(function() { // add class on scroll
     fixedBgPos: true,
 
     overflowY: 'auto',
-    modal: true,
+    modal: false,
 
     closeBtnInside: true,
     preloader: false,
